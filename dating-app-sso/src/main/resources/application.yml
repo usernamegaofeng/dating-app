@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+  # mybatis plus配置
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  typeAliasesPackage: pers.dating.sso.domain.pojo
+  type-enums-package: pers.dating.sso.enums
+  global-config:
+    db-config:
+      id-type: auto   #id策略自增长,可以使用zookeeper生成主键ID
+      table-prefix: tb_  #表名前缀
+
